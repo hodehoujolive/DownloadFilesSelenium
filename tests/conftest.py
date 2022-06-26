@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 class Browser(unittest.TestCase):
 
     def setUp(self):
-        PATH = "/Users/macbookair/Desktop/how_download_files_selenium_python/download"
+        PATH = "#DOWNLOAD_DIRECTORY"
         options = Options()
         prefs = {"download.default_directory" : PATH};
         options.add_experimental_option("prefs",prefs);
